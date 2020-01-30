@@ -29,3 +29,9 @@ yarn start
 docker build -t <your username>/hangoutswebhook .
 docker run -p <local port>:<docker port> -d <your username>/hangoutswebhook
 ```
+
+## Next steps
+
+* add `cloudbuild.yaml` to use Google Cloud Build and Google Cloud Run for easy deployment
+* add support for message arrays
+* add support for custom message types (images, carousels, etc)
