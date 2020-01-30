@@ -1,0 +1,27 @@
+{
+  "name": "hangoutswebhook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jens Devloo <jens.devloo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "GOOGLE_APPLICATION_CREDENTIALS=./sa.json PROJECT_ID=pwc-nl-connected-community-vhf nodemon --exec babel-node index.js",
+    "lint": "eslint src/**.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "dialogflow": "^1.1.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "eslint": "^6.0.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.5.1",
+    "nodemon": "^2.0.2"
+  }
+}
